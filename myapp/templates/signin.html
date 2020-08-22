@@ -1,0 +1,47 @@
+{% load static %}
+<html>
+<head>
+<title>
+Sign In
+</title>
+<style>
+form
+{
+	text-align:center;
+	margin-top : 220px;
+	margin-left: 0px;
+}
+body
+{
+	background-image : url("{% static 'login_background.jpg' %}");
+	background-size : cover;
+	background-repeat : no-repeat;
+	background-attachment: fixed;
+}
+</style>
+</head>
+<body>
+<form action="result" method="POST">
+{% csrf_token %}
+<!-- <fieldset style="background-color:white;width:100px"> -->
+Username <br>
+<input type='text' name='username' required>
+<br>
+<br>
+Password  <br>
+<input type='password' name='password' required>
+<br>
+<br>
+<input type="submit" >
+<br>
+<br>
+Does not have an account?
+<br>
+<br>
+</form>
+<a href="signup"><center><button>Signup</button></center></a>
+</body>
+</html>
+<!-- </fieldset> -->
+
+

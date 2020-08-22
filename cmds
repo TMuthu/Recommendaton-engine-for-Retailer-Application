@@ -1,0 +1,9 @@
+python manage.py collectstatic - load static files to assest folder ({% load static %})
+
+python manage.py runserver - run server
+
+python manage.py startproject name - to start a project
+
+python manage.py startapp name  - to start an app
+
+source my_env/bin/activate - activate environment (run fro project directory)

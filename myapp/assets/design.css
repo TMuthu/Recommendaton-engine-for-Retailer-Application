@@ -1,0 +1,71 @@
+a:link
+{
+  background-color: black;
+  color: white;
+  padding: 0px 25px;
+  margin:20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a:visited
+{
+  background-color: black;
+  color: white;
+  padding: 0px 25px;
+  margin:20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover
+{
+  background-color: green;
+  color: white;
+  padding: 0px 25px;
+  margin:20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;	
+}
+a:active
+{
+  background-color: black;
+  color: white;
+  padding: 0px 25px;
+  margin:20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;	
+}
+
+
+body
+{
+	background-image : url("bimage.jpg");
+	background-size : cover;
+	background-repeat : no-repeat;
+	background-attachment: fixed;
+}
+ul {
+  	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+  	
+}
+li {
+  float: left;
+}
+
+li a,img
+{
+	display:block;
+	color:white;
+	margin-left:60px;
+}
+button
+{
+	margin-bottom : 200px;
+	margin-left : 200px;
+}

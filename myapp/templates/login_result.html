@@ -1,0 +1,49 @@
+{% load static %}
+<html>
+<head>
+<title>Result</title>
+    <style>
+.chip {
+
+  padding: 0 25px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 50px;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+  display: inline-block;
+}
+.chip img {
+  float: left;
+  margin: 0 10px 0 -25px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.title_tag
+{
+    margin-top:10px;
+    margin-right:20px;
+}
+</style>
+</head>
+
+<body background_color="blue" >
+  <h1><center>Welcome</center></h1>
+
+<h3>Next Purchase Day</h3>
+{{pred_date}}
+<br>
+<h3>Recommended Reports</h3>
+{% for i in fresult%}
+<div class="chip">
+   <img src="{% static 'report_pic.png' %}" alt="Person" width="96" height="96">
+  {{i}}
+  <script>
+    localStorage.setItem("Result",fresult);
+    console.log(localStorage.getItem('Result'));      
+  </script>
+</div>
+{% endfor %}
+</body>
+</html>
